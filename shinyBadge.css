@@ -1,10 +1,11 @@
 .shinyBadge-container {
   width: 100px;
-  transform: rotateX(var(--y)) rotateY(var(--x));
+  transform: rotateX(var(--ydeg)) rotateY(var(--xdeg));
   margin: 20px;
 }
 
 .shinyBadge-outer {
+  position: relative;
   background: #003049;
   width: 10em;
   height: calc(10em * 1.1547);
@@ -31,4 +32,17 @@
   display: inline-block;
   font-size: initial; /* we reset the font-size if we want to add some content */
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+
+.shinyBadge-inner::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--y, 0) * 3px);
+  left: calc(var(--x, 0) * 3px);
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(white, #3984ff00 70%);
+
+  opacity: 0.5;
+  transition: opacity 0.2s;
 }

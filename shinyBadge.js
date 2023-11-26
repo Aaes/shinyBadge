@@ -13,10 +13,13 @@ const mapCursorPosition = ({ x, y }) => {
 };
 const setup = () => {
     const shinyBadgeContainer = document.querySelector(".shinyBadge-container");
+    const shinyBadgeInner = document.querySelector(".shinyBadge-inner");
     document.addEventListener("pointermove", ({ x, y }) => {
         const mappedPosition = mapCursorPosition({ x, y });
-        shinyBadgeContainer.style.setProperty("--x", mappedPosition.x.toString() + "deg");
-        shinyBadgeContainer.style.setProperty("--y", mappedPosition.y.toString() + "deg");
+        shinyBadgeContainer.style.setProperty("--xdeg", mappedPosition.x.toString() + "deg");
+        shinyBadgeContainer.style.setProperty("--ydeg", mappedPosition.y.toString() + "deg");
+        shinyBadgeInner.style.setProperty("--x", mappedPosition.x.toString());
+        shinyBadgeInner.style.setProperty("--y", mappedPosition.y.toString());
     });
 };
 document.addEventListener("DOMContentLoaded", function (event) {

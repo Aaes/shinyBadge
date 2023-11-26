@@ -24,18 +24,23 @@ const setup = () => {
     ".shinyBadge-container"
   );
 
+  const shinyBadgeInner =
+    document.querySelector<HTMLElement>(".shinyBadge-inner");
+
   document.addEventListener("pointermove", ({ x, y }) => {
     const mappedPosition = mapCursorPosition({ x, y });
 
     shinyBadgeContainer.style.setProperty(
-      "--x",
+      "--xdeg",
       mappedPosition.x.toString() + "deg"
     );
-
     shinyBadgeContainer.style.setProperty(
-      "--y",
+      "--ydeg",
       mappedPosition.y.toString() + "deg"
     );
+
+    shinyBadgeInner.style.setProperty("--x", mappedPosition.x.toString());
+    shinyBadgeInner.style.setProperty("--y", mappedPosition.y.toString());
   });
 };
 
