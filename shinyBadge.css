@@ -1,6 +1,7 @@
 .shinyBadge-container {
   width: 100px;
   transform: rotateX(var(--y)) rotateY(var(--x));
+  margin: 20px;
 }
 
 .shinyBadge-outer {
