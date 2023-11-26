@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
-        "target": "ES5",
+        "target": "esnext",
         "noImplicitAny": true,
         "module":"system",
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "outFile": "./project.js"
+        "outFile": "./shinyBadge.js"
     },
     "include": [
         "**/*"

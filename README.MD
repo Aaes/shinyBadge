@@ -1,17 +1,13 @@
-## Typescript starter
+## ShinyBadge
 
-This a boilerplate typescript project to quickly clone when a starting a new project.
-It includes
+A shiny badge that reacts to the mouse cursors
 
-- A basic HTML page (`index.html`)
-- A basic CSS file (`base.css`)
-- An empty Typescript file (`project.ts`)
-- A stanard prettier configuration file (`.prettierrc`)
+https://aaes.github.io/shinyBadge/index.html
 
-## Things to change
+## Thanks to these sites
 
-HTML file
+[Creating a hexagon](https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/)
 
-- The title, Javascript file path and CSS file path is directly in here
-  tsconfig
-- Contains the output file name, and can be changed here
+[Cursor tracking](https://dev.to/jh3y/how-to-cursor-tracking-parallax-52cf)
+
+[Shiny hover effect](https://bholmes.dev/blog/a-shiny-on-hover-effect-that-follows-your-mouse-css/)
