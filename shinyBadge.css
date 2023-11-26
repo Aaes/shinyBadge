@@ -1,0 +1,23 @@
+.shinyBadge-container {
+  width: 100px;
+  transform: rotateX(var(--y)) rotateY(var(--x));
+}
+
+.shinyBadge-outer {
+  background: green;
+  width: 10em;
+  height: calc(10em * 1.1547);
+  display: inline-block;
+  font-size: initial; /* we reset the font-size if we want to add some content */
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+
+.shinyBadge-inner {
+  background: lightblue;
+  margin: 9px 0 0 9px;
+  width: 9em;
+  height: calc(9em * 1.1547);
+  display: inline-block;
+  font-size: initial; /* we reset the font-size if we want to add some content */
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
